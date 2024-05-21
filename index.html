@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for="month-num">Enter Month Number:</label>
+    <input type="text" id="month-num">
+
+    <button id="btn1" onclick="func1()">Show Month</button>
+
+    <p id="demo"></p>
+
+    <script>
+
+        function func1(){
+            
+            let op;
+            let month = Number(document.getElementById("month-num").value);
+
+            switch (month) {
+            case 0:
+            op = "January";
+            break;
+
+            case 1:
+            op = "February";
+            break;
+
+            case 2:
+            op = "March";
+            break;
+
+            case 3:
+            op = "April";
+            break;
+
+            case 4:
+            op = "May";
+            break;
+
+            case 5:
+            op = "June";
+            break;
+
+            case  6:
+            op = "July";
+            break;
+
+            case  7:
+            op = "August";
+            break;
+
+            case  8:
+            op = "September";
+            break;
+
+            case  9:
+            op = "October";
+            break;
+
+            case  10:
+            op = "November";
+            break;
+
+            case  11:
+            op = "December";
+            break;
+
+            default:
+            op="Invalid Month";
+            
+
+}
+
+    document.getElementById("demo").innerHTML = op;
+            
+        }
+
+       
+    </script>
+
+
+
+</body>
+
+</html>
